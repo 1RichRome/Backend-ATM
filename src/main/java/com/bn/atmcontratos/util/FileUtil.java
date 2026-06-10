@@ -1,0 +1,3 @@
+package com.bn.atmcontratos.util;
+import java.text.Normalizer; import java.time.LocalDateTime; import java.time.format.DateTimeFormatter;
+public class FileUtil{ public static String clean(String n){if(n==null||n.isBlank())return "archivo"; return Normalizer.normalize(n,Normalizer.Form.NFD).replaceAll("\\p{M}","").replaceAll("[^A-Za-z0-9._-]","_").replaceAll("_+","_");} public static String ts(String n){return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"))+"_"+clean(n);} public static String ext(String n){return n!=null&&n.contains(".")?n.substring(n.lastIndexOf('.')+1).toLowerCase():"";}}

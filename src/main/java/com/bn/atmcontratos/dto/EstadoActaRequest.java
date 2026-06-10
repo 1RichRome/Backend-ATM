@@ -1,0 +1,1 @@
+package com.bn.atmcontratos.dto; import com.bn.atmcontratos.model.enums.EstadoActa; import lombok.Data; @Data public class EstadoActaRequest{ private EstadoActa estado; private String observaciones; }

@@ -1,0 +1,2 @@
+package com.bn.atmcontratos.dto; import lombok.*; import java.math.BigDecimal;
+@Data @AllArgsConstructor public class DashboardResumen{ private long totalAtms,totalProveedores,totalContratos,contratosVigentes,contratosPorVencer30,contratosPorVencer60,contratosPorVencer90,contratosVencidos,actasPendientesMesActual,actasGeneradasMesActual,actasFirmadasMesActual; private BigDecimal montoMensualContratado,montoTotalContratado; }

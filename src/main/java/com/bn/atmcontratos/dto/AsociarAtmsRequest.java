@@ -1,0 +1,1 @@
+package com.bn.atmcontratos.dto; import lombok.Data; import java.util.*; @Data public class AsociarAtmsRequest{ private List<Long> atmIds=new ArrayList<>(); }

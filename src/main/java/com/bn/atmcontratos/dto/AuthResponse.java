@@ -1,0 +1,1 @@
+package com.bn.atmcontratos.dto; import com.bn.atmcontratos.model.enums.RolNombre; import lombok.*; @Data @AllArgsConstructor public class AuthResponse{ private String token,username,nombreCompleto; private RolNombre rol; }
